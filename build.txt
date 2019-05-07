@@ -1,0 +1,5 @@
+﻿modReferences = imkSushisDataPacksMod
+author = Inferno Gear
+version = 0.1
+displayName = War Of The Phantom
+buildIgnore = *.csproj, *.user, obj\*, bin\*, .vs\*

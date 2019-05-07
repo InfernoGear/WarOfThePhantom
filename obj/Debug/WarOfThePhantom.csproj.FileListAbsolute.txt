@@ -1,0 +1,8 @@
+C:\Users\logan\Documents\My Games\Terraria\ModLoader\Mod Sources\WarOfThePhantom\bin\Debug\WarOfThePhantom.dll
+C:\Users\logan\Documents\My Games\Terraria\ModLoader\Mod Sources\WarOfThePhantom\bin\Debug\WarOfThePhantom.pdb
+C:\Users\logan\Documents\My Games\Terraria\ModLoader\Mod Sources\WarOfThePhantom\obj\Debug\WarOfThePhantom.csprojAssemblyReference.cache
+C:\Users\logan\Documents\My Games\Terraria\ModLoader\Mod Sources\WarOfThePhantom\obj\Debug\WarOfThePhantom.csproj.CoreCompileInputs.cache
+C:\Users\logan\Documents\My Games\Terraria\ModLoader\Mod Sources\WarOfThePhantom\obj\Debug\WarOfThePhantom.dll
+C:\Users\logan\Documents\My Games\Terraria\ModLoader\Mod Sources\WarOfThePhantom\obj\Debug\WarOfThePhantom.pdb
+C:\Users\logan\Documents\My Games\Terraria\ModLoader\Mod Sources\WarOfThePhantom\bin\Debug\Terraria.exe
+C:\Users\logan\Documents\My Games\Terraria\ModLoader\Mod Sources\WarOfThePhantom\obj\Debug\WarOfThePhantom.csproj.CopyComplete
