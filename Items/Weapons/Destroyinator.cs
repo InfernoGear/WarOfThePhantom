@@ -15,7 +15,7 @@ namespace WarOfThePhantom.Items.Weapons
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Destroyinator");
-            Tooltip.SetDefault("50% not to consume ammo." +
+            Tooltip.SetDefault("50% chance to not consume ammo." +
                 "\nHighly inaccurate.");
         }
 

@@ -15,7 +15,7 @@ namespace WarOfThePhantom.Items.Weapons
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Microshark");
-            Tooltip.SetDefault("Two round burst.\nOnly the first shot consumes ammo.");
+            Tooltip.SetDefault("Minishark's little brother.");
         }
 
         public override void SetDefaults()
@@ -25,13 +25,12 @@ namespace WarOfThePhantom.Items.Weapons
             item.crit = 4;
             item.width = 38;
             item.height = 16;
-            item.useTime = 4;
-            item.useAnimation = 8;
-            item.reuseDelay = 10;
+            item.useTime = 12;
+            item.useAnimation = 12;
             item.knockBack = 0;
             item.useStyle = 5;
             item.noMelee = true;
-            item.value = Item.buyPrice(gold: 1);
+            item.value = Item.buyPrice(silver: 25);
             item.rare = 1;
             item.UseSound = SoundID.Item11;
             item.autoReuse = true;
@@ -40,11 +39,23 @@ namespace WarOfThePhantom.Items.Weapons
             item.useAmmo = AmmoID.Bullet;
         }
 
-        public override bool ConsumeAmmo(Player player)
+        public override void AddRecipes()
         {
-            // Because of how the game works, player.itemAnimation will be 7 and finally 3. (UseAmination - 1, then - useTime until less than 0.) 
-            // We can get the Clockwork Assault Riffle Effect by not consuming ammo when itemAnimation is lower than the first shot.
-            return !(player.itemAnimation < item.useAnimation - 1);
+            ModRecipe recipe = new ModRecipe(mod);
+            recipe.AddIngredient(this);
+            recipe.AddIngredient(ItemID.SharkFin);
+            recipe.AddIngredient(ItemID.DemoniteBar, 8);
+            recipe.AddTile(TileID.Anvils);
+            recipe.SetResult(ItemID.Minishark);
+            recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(this);
+            recipe.AddIngredient(ItemID.SharkFin);
+            recipe.AddIngredient(ItemID.CrimtaneBar, 8);
+            recipe.AddTile(TileID.Anvils);
+            recipe.SetResult(ItemID.Minishark);
+            recipe.AddRecipe();
         }
     }
 }

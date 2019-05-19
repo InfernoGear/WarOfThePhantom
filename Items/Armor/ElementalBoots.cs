@@ -16,7 +16,7 @@ namespace WarOfThePhantom.Items.Armor
         {
             DisplayName.SetDefault("Elemental Boots");
             Tooltip.SetDefault("Player can run insanely fast." +
-                "\n+10% movement speed." +
+                "\n+15% movement speed." +
                 "\nAllows for rocket-powered flight." +
                 "\nIncreased mobility on ice." +
                 "\nIce won't break when you fall on it." +
@@ -35,9 +35,9 @@ namespace WarOfThePhantom.Items.Armor
 
         public override void UpdateEquip(Player player)
         {
-            player.accRunSpeed = 8.75f;
+            player.accRunSpeed = 10f;
             player.rocketBoots = 3;
-            player.moveSpeed += 0.10f;
+            player.moveSpeed += 0.15f;
             player.iceSkate = true;
             player.waterWalk = true;
             player.lavaMax = 420;
